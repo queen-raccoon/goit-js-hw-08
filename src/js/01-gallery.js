@@ -9,7 +9,7 @@ const galleryItemsKey = "Gallery Items:";
 const listElement = document.querySelector('.gallery');
 renderList(galleryItems, listElement);
 
-const modalGallery = new SimpleLightbox('.gallery a', {
+new SimpleLightbox('.gallery a', {
      captions: true,
      closeText: '×',
      captionsData: 'alt',
