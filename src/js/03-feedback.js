@@ -29,8 +29,3 @@ formEl.addEventListener("submit", (event) => {
     }
 });
 
-
-
-
-
-

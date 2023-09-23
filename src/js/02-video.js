@@ -12,13 +12,4 @@ playerEL.on('timeupdate', throttle(onPlay, 1000));
 
 
 const checkSavedTime = localStorage.getItem(videoKey);
-checkSavedTime === null ? playerEL.setCurrentTime(0): playerEL.setCurrentTime(checkSavedTime);
-
-
-
-
-
-
-
-
-
+checkSavedTime !== null ? playerEL.setCurrentTime(checkSavedTime) : playerEL.setCurrentTime(0);
